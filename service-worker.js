@@ -7,7 +7,7 @@ const urlsToCache = [
   `${BASE_PATH}/logo-512.png`,
   `${BASE_PATH}/logo-192.png`,
   `${BASE_PATH}/app.js`,
-  `${BASE_PATH}/fonts/Montserrat-Regular.woff2`
+  `${BASE_PATH}/fonts/montserrat-regular.woff2`
 ];
 
 
