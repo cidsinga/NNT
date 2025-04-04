@@ -1,13 +1,16 @@
 const CACHE_NAME = 'nashville-number-trainer-v1';
+const BASE_PATH = '/NNT';
 const urlsToCache = [
-  '/',
-  '/index.html',
-  '/style.css',
-  '/logo-512.png',
-  '/logo-192.png',
-  '/app.js',
-  '/fonts/Montserrat-Regular.woff2'
+  `${BASE_PATH}/`,
+  `${BASE_PATH}/index.html`,
+  `${BASE_PATH}/style.css`,
+  `${BASE_PATH}/logo-512.png`,
+  `${BASE_PATH}/logo-192.png`,
+  `${BASE_PATH}/app.js`,
+  `${BASE_PATH}/fonts/Montserrat-Regular.woff2`
 ];
+
+
 
 // Install service worker
 self.addEventListener('install', (event) => {
