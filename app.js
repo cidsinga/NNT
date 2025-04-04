@@ -11,6 +11,35 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+// PWA Install 
+let deferredPrompt; // Will hold the prompt event
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the default prompt
+  e.preventDefault();
+  // Stash the event so it can be triggered later
+  deferredPrompt = e;
+
+  // Optionally, show your custom install button
+  const installButton = document.getElementById('install-button');
+  installButton.style.display = 'block';
+
+  installButton.addEventListener('click', () => {
+    // Show the install prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+      if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the install prompt');
+      } else {
+        console.log('User dismissed the install prompt');
+      }
+      deferredPrompt = null; // Clear the prompt once it's been shown
+    });
+  });
+});
+
+
 // DOM Elements
 const keySelect = document.getElementById("key-select");
 const accidentalSelect = document.getElementById("accidental-select");
