@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nashville Number Trainer</title>
+  <link rel="icon" href="logo-192.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+  <!-- Main Screen -->
+  <div id="main-screen">
+    <h1>Nashville Number Trainer</h1>
+    <p>Practice the Nashville Number System</p>
+    <label for="key-select">Select a Key:</label>
+    <label for="key-select">Choose a Key:</label>
+
+    <select id="key-select">
+      <option value="C">C</option>
+      <option value="D">D</option>
+      <option value="E">E</option>
+      <option value="F">F</option>
+      <option value="G">G</option>
+      <option value="A">A</option>
+      <option value="B">B</option>
+    </select>
+
+    <select id="accidental-select">
+      <option value="">Natural</option>
+      <option value="#">♯</option>
+      <option value="b">♭</option>
+    </select>
+
+
+
+    <button id="start-button">Start Flash Cards</button>
+    <button id="instruction-button">Learn Nashville Number System</button>
+  </div>
+
+  <!-- Flash Card Screen (Initially Hidden) -->
+  <div id="flash-card-screen" style="display: none;">
+    <h2 id="flash-card-title">Key of C</h2>
+    <p id="random-number"></p>
+    <div id="chord-buttons">
+      <!-- Buttons for the chords will be dynamically added here -->
+    </div>
+    <div id="feedback"></div>
+    <button id="back-button">Back to Main Screen</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
