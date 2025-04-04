@@ -1,12 +1,12 @@
 const CACHE_NAME = 'nashville-number-trainer-v1';
 const urlsToCache = [
   '/',
-  'index.html',
-  'style.css',
-  'logo-512.png',
-  'logo-192.png',
-  'app.js',
-  'fonts/Montserrat-Regular.woff2'
+  '/index.html',
+  '/style.css',
+  '/logo-512.png',
+  '/logo-192.png',
+  '/app.js',
+  '/fonts/Montserrat-Regular.woff2'
 ];
 
 // Install service worker
