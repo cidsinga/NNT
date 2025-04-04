@@ -5,7 +5,8 @@ const urlsToCache = [
   'style.css',
   'logo-512.png',
   'logo-192.png',
-  'app.js'
+  'app.js',
+  'Montserrat-Regular.woff2'
 ];
 
 // Install service worker
